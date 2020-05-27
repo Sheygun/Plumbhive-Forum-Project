@@ -37,6 +37,25 @@ p {
     color: rgb(61, 59, 59);
 }
 
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom:1rem;
+ }
+ .navbar .dropdown-menu {
+   border:none;
+   background-color:black!important;
+ }
+
+ @media screen and (min-width: 992px) {
+ .navbar .dropdown {position:static;}
+ .navbar .dropdown-menu {
+   width:30%;
+   left:0;
+   right:0;
+   top:45px;
+ }
+ }
+
+
 ul {
     margin: 0;
     padding: 0;
@@ -264,6 +283,11 @@ p.copy a{
     font-weight:600;
     }
 
+.desp{
+    font-size: 16px;
+    font-weight: bold;
+}
+
 @media (max-width: 991px) {
     .footer-details h5{
         font-size: 13px;
@@ -286,5 +310,9 @@ p.copy a{
     .forum-topic{
         font-size: 22px;
         color: #004483;
+    }
+    .desp{
+        font-size: 12px;
+        font-weight: bold;
     }
 }
